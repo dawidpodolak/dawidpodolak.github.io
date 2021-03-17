@@ -29,7 +29,7 @@
     var deeplink = 'zen://zenPay?id=sdfadsfsdf';
     var fallback = 'https://zen.com';
     window.location.replace('intent://zenPay?id=asdksda#Intent;package=com.zen.application.test;scheme=https;end');
-    window.location.href = deeplink;
+    window.location.replace(deeplink);
     document.getElementById("prompt").innerHTML = 'open deeplink with href: ' + deeplink ;
     setTimeout(
         function () {
