@@ -26,9 +26,10 @@
 
 <script>
 //     window.location.replace('intent://zenPay?id=asdksda#Intent;package=com.zen.application.test;scheme=zen;S.browser_fallback_url=http%3A%2F%2Fzen.com;end');
+    var deeplink = 'zen://zenPay?id=sdfadsfsdf'
     window.location.replace('intent://zenPay?id=asdksda#Intent;package=com.zen.application.test;scheme=https;end');
-    window.location.replace('zen://zenPay?id=sdfadsfsdf');
-    document.getElementById("prompt").innerHTML = 'intent opened!';
+    window.location.replace(deeplink);
+    document.getElementById("prompt").innerHTML = 'open deeplink: ' + deeplink ;
     setTimeout(
         function () {
 //             window.location.href="intent://zenPay?id=asdksda#Intent;package=com.zen.application.test;scheme=zen;S.browser_fallback_url=http%3A%2F%2Fzen.com;end"
