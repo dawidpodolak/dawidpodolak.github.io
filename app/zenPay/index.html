@@ -17,11 +17,12 @@ ZenPay
 <br>
 <a href="intent://scan/#Intent;ibi=com.zen.b2c-dev-app;package=com.zen.application.test;scheme=zen%3A%2F%2FzenPay;S.browser_fallback_url=http%3A%2F%2Fzen.com;end">Open app directly with data iOS!!</a>
 
+
+<button type="button" onclick="clickHandler()">Click Me!</button>
 <script>
-
-window.location.replace("zen://zenPay/"); setTimeout(function () {
-
-window.location.replace("https://itunes.apple.com/app/id12345678"); }, 2000);
-
+  function clickHandler() {
+    window.location.replace("zen://zenPay/"); setTimeout(function () {
+    window.location.replace("https://itunes.apple.com/app/id12345678"); }, 2000);
+  }
 </script>
 
