@@ -26,15 +26,16 @@
 
 <script>
 //     window.location.replace('intent://zenPay?id=asdksda#Intent;package=com.zen.application.test;scheme=zen;S.browser_fallback_url=http%3A%2F%2Fzen.com;end');
-    var deeplink = 'zen://zenPay?id=sdfadsfsdf'
+    var deeplink = 'zen://zenPay?id=sdfadsfsdf';
+    var fallback = 'https://zen.com';
     window.location.replace('intent://zenPay?id=asdksda#Intent;package=com.zen.application.test;scheme=https;end');
     window.location.replace(deeplink);
     document.getElementById("prompt").innerHTML = 'open deeplink: ' + deeplink ;
     setTimeout(
         function () {
 //             window.location.href="intent://zenPay?id=asdksda#Intent;package=com.zen.application.test;scheme=zen;S.browser_fallback_url=http%3A%2F%2Fzen.com;end"
-            document.getElementById("prompt").innerHTML = 'timeout! open fallback';
-            window.location.replace('http%3A%2F%2Fzen.com');  
+            document.getElementById("prompt").innerHTML = 'timeout! open fallback' + fallback;
+            window.location.replace(fallback);  
         }, 2000);
 </script>
 
