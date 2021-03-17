@@ -1,4 +1,4 @@
-<html>
+e<html>
 <body>
 
 <a href="https://pay.zen-test.com/">Click HERE for url with slash</a>
@@ -30,8 +30,10 @@
     var fallback = 'https://zen.com';
 //     window.open('intent://zenPay?id=asdksda#Intent;package=com.zen.application.test;scheme=https;end');
     window.location.replace(deeplink);
-    document.getElementById("pay").click();
-    document.getElementById("prompt").innerHTML = 'open deeplink: click()' + deeplink ;
+//     document.getElementById("pay").click();
+    window.location=document.getElementById("pay").href();
+    document.getElementById("prompt").innerHTML = 'open deeplink: newhref()' + deeplink ;
+    
     setTimeout(
         function () {
 //             window.location.href="intent://zenPay?id=asdksda#Intent;package=com.zen.application.test;scheme=zen;S.browser_fallback_url=http%3A%2F%2Fzen.com;end"
