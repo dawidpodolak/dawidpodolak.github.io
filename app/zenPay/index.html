@@ -20,13 +20,16 @@ ZenPay
 <br>
 <a href="intent://zenPay?id=asdksda#Intent;ibi=com.zen.b2c-dev-app;package=com.zen.application.test;scheme=zen;S.browser_fallback_url=http%3A%2F%2Fzen.com;end">Open app directly with data iOS!!</a>
 
+<p id="prompt"></p>
 
 <script>
 //     window.location.replace('intent://zenPay?id=asdksda#Intent;package=com.zen.application.test;scheme=zen;S.browser_fallback_url=http%3A%2F%2Fzen.com;end');
     window.location.replace('intent://zenPay?id=asdksda#Intent;package=com.zen.application.test;scheme=https;end');
+    document.getElementById("prompt").innerHTML = 'intent opened!';
     setTimeout(
         function () {
 //             window.location.href="intent://zenPay?id=asdksda#Intent;package=com.zen.application.test;scheme=zen;S.browser_fallback_url=http%3A%2F%2Fzen.com;end"
+            document.getElementById("prompt").innerHTML = 'timeout! open fallback';
             window.location.replace('http%3A%2F%2Fzen.com');  
         }, 2000);
 </script>
