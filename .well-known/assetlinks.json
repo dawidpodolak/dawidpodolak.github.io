@@ -6,13 +6,4 @@
     "sha256_cert_fingerprints":
     ["16:03:DF:17:BC:79:83:F5:3C:DA:97:8D:F7:C7:54:09:65:46:32:45:03:7E:24:C2:8D:F8:74:CF:DB:DA:D2:B6"]
   }
-},
-{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.zen.application",
-    "sha256_cert_fingerprints":
-    ["F1:9E:57:31:57:60:98:19:36:A4:CB:C8:DF:CE:7A:35:4D:53:D2:B3:84:67:94:B1:5E:D5:56:90:6E:60:5E:73"]
-  }
 }]
